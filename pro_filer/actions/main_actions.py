@@ -71,7 +71,6 @@ def show_preview(context):
         f'Found {len(context["all_files"])} files '
         f'and {len(context["all_dirs"])} directories'
     )
-    if context["all_files"]:
+    if context["all_files"] or context["all_dirs"]:
         print(f'First 5 files: {context["all_files"][:5]}')
-    if context["all_dirs"]:
         print(f'First 5 directories: {context["all_dirs"][:5]}')
