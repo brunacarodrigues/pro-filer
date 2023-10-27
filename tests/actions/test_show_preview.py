@@ -39,10 +39,10 @@ def test_show_preview_only_files(capsys):
 
     expected_output = (
         "Found 3 files and 0 directories\n"
-        "First 5 files: ['file1.txt', 'file2.txt', 'file3.txt']"
+        "First 5 files: ['file1.txt', 'file2.txt', 'file3.txt']\n"
     )
 
-    assert captured.out.strip() == expected_output
+    assert captured.out == expected_output
 
 
 def test_show_preview_only_dirs(capsys):
