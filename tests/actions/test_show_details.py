@@ -54,7 +54,7 @@ def test_show_details_directory(capsys, tmp_path):
 
     expected_output = (
         f"File name: test_dir\n"
-        f"File size in bytes: 64\n"
+        f"File size in bytes: {os.path.getsize(dir_path)}\n"
         f"File type: directory\n"
         f"File extension: [no extension]\n"
         f"Last modified date: {datetime.today().date()}"
